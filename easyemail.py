@@ -11,4 +11,4 @@ class EasyEmail:
                 break
 
     def copyToClipboard(self):
-        pass
+        pyperclip.copy("Test copy")
