@@ -12,3 +12,6 @@ class EasyEmail:
 
     def copyToClipboard(self):
         pyperclip.copy("Test copy")
+
+easyemail = EasyEmail()
+easyemail.startListener()
