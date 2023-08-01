@@ -15,6 +15,7 @@ class EasyEmail:
     def writeEmail(self):
         email = dotenv_values(".env")["EMAIL"]
         keyboard.write(email)
+        self.startListener()
 
 easyemail = EasyEmail()
 easyemail.startListener()
