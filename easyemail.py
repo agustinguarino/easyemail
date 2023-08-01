@@ -8,10 +8,11 @@ class EasyEmail:
         while True:
             if keyboard.is_pressed('ctrl+1'):
                 print("Test")
+                self.writeEmail()
                 break
 
-    def copyToClipboard(self):
-        pyperclip.copy("Test copy")
+    def writeEmail(self):
+        pass
 
 easyemail = EasyEmail()
 easyemail.startListener()
