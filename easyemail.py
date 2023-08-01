@@ -1,5 +1,5 @@
 import keyboard
-from dotenv import load_dotenv
+from dotenv import load_dotenv, dotenv_values
 
 class EasyEmail:
     def __init__(self):
@@ -7,13 +7,14 @@ class EasyEmail:
 
     def startListener(self):
         while True:
-            if keyboard.is_pressed('ctrl+1'):
+            if keyboard.is_pressed('ctrl+shift+1'):
                 print("Test")
                 self.writeEmail()
                 break
 
     def writeEmail(self):
-        pass
+        email = dotenv_values(".env")["EMAIL"]
+        keyboard.write(email)
 
 easyemail = EasyEmail()
 easyemail.startListener()
