@@ -1,8 +1,9 @@
 import keyboard
+from dotenv import load_dotenv
 
 class EasyEmail:
     def __init__(self):
-        pass
+        load_dotenv()
 
     def startListener(self):
         while True:
