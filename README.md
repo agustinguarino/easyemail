@@ -10,10 +10,12 @@ By pressing the combination **CTRL+SHIFT+1,** you will be able to auto type any 
 
 In order to use this program, you will need to [install the latest version of Python](https://www.python.org/downloads/) for your OS (make sure to add Python to PATH while installing)
 
-Once installed, you have to install a package called "keyboard". In order to do this, open your cmd and execute the following command:
+Once installed, you need to install two dependencies in order for the program to work.
+
+To do this, open your cmd and execute the following commands:
 
     pip install keyboard
-    
+    pip install python-dotenv
 
 ## Cloning the code
 
