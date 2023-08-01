@@ -8,7 +8,7 @@ class EasyEmail:
     def startListener(self):
         while True:
             if keyboard.is_pressed('ctrl+shift+1'):
-                print("Test")
+                print("Written!")
                 self.writeEmail()
                 break
 
