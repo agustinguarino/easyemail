@@ -1,4 +1,4 @@
-import keyboard, pyperclip
+import keyboard
 
 class EasyEmail:
     def __init__(self):
