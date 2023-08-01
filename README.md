@@ -6,9 +6,19 @@ The objective of this program is to reduce the amount of time spent on typing lo
 
 By pressing the combination **CTRL+SHIFT+1,** you will be able to auto type any text you want.
 
+## Requirements
+
+In order to use this program, you will need to [install the latest version of Python](https://www.python.org/downloads/) for your OS (make sure to add Python to PATH while installing)
+
+Once installed, you have to install a package called "keyboard". In order to do this, open your cmd and execute the following command:
+
+    pip install keyboard
+    
+
 ## Cloning the code
 
 Clone the respository or dowbload it and place at a path of your preference.
+
 
 ## Set up
 
