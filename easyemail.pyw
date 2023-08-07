@@ -16,7 +16,7 @@ class EasyEmail:
 
         while True:
             sleep(10000000)
-            self.startListener()
+            self.startListeners()
 
     def writeData(self, option):
         option_data = dotenv_values(".env")[f"OPTION{option}"]
