@@ -18,10 +18,12 @@ class EasyEmail:
             self.startListeners()
 
     def writeData(self, option):
+        self.prepareForInput()
         option_data = dotenv_values(".env")[f"OPTION{option}"]
         keyboard.write(option_data)
 
     def prepareForInput(self):
-        pass
+        keyboard.press_and_release("backspace")
+        keyboard.press_and_release("backspace")
 
 easyemail = EasyEmail()
