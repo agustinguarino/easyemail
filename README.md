@@ -26,7 +26,7 @@ Clone the respository or dowbload it and place at a path of your preference.
 
 ### .env file
 
-At the same folder where the file called "easyemail.pyw" is, you will find a file called **.env**, open it and after every option, fill with the text you want to be typed when you press the shortcut. (O=1 will trigger OPTION1, O=2 will trigger OPTION2, and so on...).
+At the same folder where the file called "easyemail.pyw" is, you will find a file called **.env**, open it and after every option, fill with the text you want to be typed when you press the shortcut. (O+1 will trigger OPTION1, O+2 will trigger OPTION2, and so on...).
 
     OPTION1=example@gmail.com
     OPTION2=git status
