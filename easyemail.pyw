@@ -14,8 +14,8 @@ class EasyEmail:
         keyboard.add_hotkey('ctrl+shift+5', lambda: self.writeData("5"))
 
         while True:
-            sleep(10000)
-        
+            sleep(10000000)
+            self.startListener()
 
     def writeData(self, option):
         pass
