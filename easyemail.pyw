@@ -8,12 +8,11 @@ class EasyEmail:
         self.startListeners()
 
     def startListeners(self):
-        keyboard.add_hotkey('ctrl+alt+1', lambda: self.writeData("1"))
-        keyboard.add_hotkey('ctrl+alt+2', lambda: self.writeData("2"))
-        keyboard.add_hotkey('ctrl+alt+3', lambda: self.writeData("3"))
-        keyboard.add_hotkey('ctrl+alt+4', lambda: self.writeData("4"))
-        keyboard.add_hotkey('ctrl+alt+5', lambda: self.writeData("5"))
-
+        keyboard.add_hotkey('o+1', lambda: self.writeData("1"))
+        keyboard.add_hotkey('o+2', lambda: self.writeData("2"))
+        keyboard.add_hotkey('o+3', lambda: self.writeData("3"))
+        keyboard.add_hotkey('o+4', lambda: self.writeData("4"))
+        keyboard.add_hotkey('o+5', lambda: self.writeData("5"))
         while True:
             sleep(10000000)
             self.startListeners()
@@ -21,5 +20,8 @@ class EasyEmail:
     def writeData(self, option):
         option_data = dotenv_values(".env")[f"OPTION{option}"]
         keyboard.write(option_data)
+
+    def prepareForInput(self):
+        pass
 
 easyemail = EasyEmail()
