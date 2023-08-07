@@ -22,5 +22,4 @@ class EasyEmail:
         keyboard.write(option_data)
 
 easyemail = EasyEmail()
-#easyemail.startListener()
 easyemail.startListeners()
