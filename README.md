@@ -4,7 +4,7 @@
 
 The objective of this program is to reduce the amount of time spent on typing long/repetitive pieces of text (like my incredibly long email I need to type regularly).
 
-By pressing the combination **CTRL+SHIFT+1,** you will be able to auto type any text you want.
+By pressing the combination **O+1/2/3/4/5,** you will be able to auto type any text you want.
 
 ## Requirements
 
@@ -26,9 +26,10 @@ Clone the respository or dowbload it and place at a path of your preference.
 
 ### .env file
 
-At the same folder where the file called "easyemail.pyw" is, create a filed called ".env" (without quotes, make sure the extension is .env), and in there copy and paste the following:
+At the same folder where the file called "easyemail.pyw" is, you will find a file called **.env**, open it and after every option, fill with the text you want to be typed when you press the shortcut. (O=1 will trigger OPTION1, O=2 will trigger OPTION2, and so on...).
 
-    EMAIL=example@gmail.com
+    OPTION1=example@gmail.com
+    OPTION2=git status
 
 Replace the example email with your email/text.
 
