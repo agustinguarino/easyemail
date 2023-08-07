@@ -5,6 +5,7 @@ import keyboard
 class EasyEmail:
     def __init__(self):
         load_dotenv()
+        self.startListeners()
 
     def startListeners(self):
         keyboard.add_hotkey('ctrl+alt+1', lambda: self.writeData("1"))
@@ -22,4 +23,3 @@ class EasyEmail:
         keyboard.write(option_data)
 
 easyemail = EasyEmail()
-easyemail.startListeners()
